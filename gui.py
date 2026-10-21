@@ -14,6 +14,10 @@ def calculate():
     # TODO: read the bill amount with entry.get() and turn it into a float. Work out
     #   a 15% tip and the total (bill + tip). Then show them, e.g.:
     #       result.config(text="Tip: $1.50   Total: $11.50")
+    amount = entry.get()
+    tip: float = float(amount)*0.15
+    total: float = float(amount)+tip
+    result.config(text= f"Tip: ${tip}   Total: ${total}")
     pass
 
 
