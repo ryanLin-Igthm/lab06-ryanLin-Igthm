@@ -26,7 +26,7 @@ def main():
             #   print "New balance: <balance>" (2 decimal places).
             amount = input("Amount: ")
             if float(amount) > balance:
-                print("Insufficient funds")
+                print("Insufficient funds \n")
             else:
                 balance = balance - float(amount)
                 print(f"New balance: {balance:.2f} \n")
