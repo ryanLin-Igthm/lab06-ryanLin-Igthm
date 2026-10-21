@@ -18,7 +18,8 @@ def main():
             #   "New balance: <balance>" with the balance shown to 2 decimal places.
             amount = input("Amount: ")
             balance = balance + float(amount)
-            print(f"New balance: {balance:.2f} \n")
+            print(f"New balance: {balance:.2f}")
+            print("...")
             pass
         elif choice == "2":
             # TODO: ask "Amount: " and read it as a float. If it is MORE than balance,
@@ -26,14 +27,17 @@ def main():
             #   print "New balance: <balance>" (2 decimal places).
             amount = input("Amount: ")
             if float(amount) > balance:
-                print("Insufficient funds \n")
+                print("Insufficient funds")
+                print("...")
             else:
                 balance = balance - float(amount)
-                print(f"New balance: {balance:.2f} \n")
+                print(f"New balance: {balance:.2f}")
+                print("...")
             pass
         elif choice == "3":
             # TODO: print "Current balance: <balance>" (2 decimal places).
-            print(f"Current balance: {balance:.2f} \n")
+            print(f"Current balance: {balance:.2f}")
+            print("...")
             pass
         elif choice == "4":
             print("Goodbye")
